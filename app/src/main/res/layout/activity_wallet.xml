@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    tools:context="com.pbph.pcc.activity.WalletActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/include_layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tab_color_bg"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tv_wallet_balance_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="我的余额"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_wallet_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wallet_balance_desc"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_wallet_balance"
+            android:text="提现收取7%服务费"
+            android:textColor="#FA8905"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_wallet_balance"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/tv_wallet_get_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="2dp"
+                android:drawableTop="@drawable/ico_wallet"
+                android:text="提现"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/tv_wallet_total_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_tab_color_bg"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textColor="@color/white" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="15dip"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:drawableRight="@drawable/ico_bottom_wallet_arrow_"
+            android:paddingBottom="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:paddingTop="10dip"
+            android:text="收支明细"
+            android:textColor="@color/dark_gray"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#888888" />
+
+        <ListView
+            android:id="@+id/lv_wallet_log"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:cacheColorHint="@color/de_transparent"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:scrollbars="none" />
+
+
+        <ImageView
+            android:id="@+id/ll_listview_empty"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingBottom="50dip"
+            android:paddingTop="50dip"
+            android:scaleType="center"
+            android:src="@drawable/xag_qsy_qb" />
+
+    </LinearLayout>
+</LinearLayout>

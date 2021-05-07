@@ -1,0 +1,104 @@
+<resources>
+    <string name="app_name">小阿光</string>
+    <string name="ed_search_text">请搜索想要购买的商品</string>
+    <string name="btn_search_text">搜索</string>
+    <string name="btn_login_getcode_text">获取验证码</string>
+    <string name="phone_number_is_null">手机号不能为空</string>
+    <string name="Illegal_phone_number">非法手机号</string>
+    <string name="connect_error">与服务器链接失败，请稍后尝试</string>
+
+    <array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </array>
+
+    <integer-array name="yesorno_key">
+        <item>0</item>
+        <item>1</item>
+    </integer-array>
+
+    <string-array name="yesorno_value">
+        <item>否</item>
+        <item>是</item>
+    </string-array>
+
+    <integer-array name="place_key">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="place_value">
+        <item>食堂</item>
+        <item>公寓</item>
+        <item>教学楼</item>
+        <item>家属楼</item>
+        <item>快递点</item>
+        <item>其他</item>
+    </string-array>
+
+
+    <integer-array name="time_key">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </integer-array>
+    <string-array name="time_value">
+        <item>半小时</item>
+        <item>任意时间</item>
+        <item>上午</item>
+        <item>下午</item>
+    </string-array>
+
+    <integer-array name="money_key">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </integer-array>
+    <string-array name="money_value">
+        <item>0元</item>
+        <item>1元</item>
+        <item>2元</item>
+        <item>3元</item>
+        <item>4元</item>
+        <item>5元</item>
+        <item>6元</item>
+    </string-array>
+
+
+    <string-array name="psxx">
+        <item>预计送达</item>
+        <item>送货地址</item>
+    </string-array>
+
+    <string-array name="ddxx">
+        <item>订单编号</item>
+        <item>支付方式</item>
+        <item>支付时间</item>
+        <item>订单备注</item>
+    </string-array>
+
+
+    <string-array name="smet_key">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="smet_value">
+        <item>全部</item>
+        <item>外卖</item>
+        <item>超市</item>
+        <item>快递</item>
+        <item>任务</item>
+    </string-array>
+
+</resources>

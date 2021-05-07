@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants">
+
+
+    <ImageView
+        android:id="@+id/ImageView1"
+        android:layout_width="90dip"
+        android:layout_height="70dip"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="12dip"
+        android:layout_marginRight="12dip"
+        android:layout_marginTop="12dip"
+        android:scaleType="fitXY"
+        android:src="@mipmap/banner_zw" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        style="@style/listview_restaurantorder_textview1_style"
+        android:layout_alignTop="@+id/ImageView1"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toRightOf="@+id/ImageView1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ImageView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="8dip"
+        android:layout_toRightOf="@+id/ImageView1"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView21"
+            style="@style/listview_restaurantorder_textview2_style"
+            android:textColor="#919191"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView22"
+            style="@style/listview_restaurantorder_textview2_style"
+            android:textColor="#BEBEBE"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/listview_restaurantorder_textview2_style"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ImageView1"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/restaurantorder_btn_bg"
+        android:gravity="center"
+        android:paddingBottom="2dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="3dip"
+        android:text="进店"
+        android:textColor="#7CDC97"
+        android:textSize="13sp" />
+
+
+</RelativeLayout>
+
+
+
+

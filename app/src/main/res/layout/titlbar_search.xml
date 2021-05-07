@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_theme_color"
+    android:padding="10dp">
+
+    <ImageButton
+        android:id="@+id/titlebar_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:background="@null"
+        android:padding="6dip"
+        android:src="@drawable/ico_left_arrow" />
+
+    <LinearLayout
+        android:id="@+id/titlebar_centerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/titlebar_right"
+        android:layout_toRightOf="@id/titlebar_left"
+        android:background="@drawable/chooseposition_edt_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_marginLeft="6dip"
+            android:padding="5dip"
+            android:scaleType="fitCenter"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:id="@+id/mall_go_search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:background="@null"
+            android:hint="搜索城市"
+            android:imeOptions="actionSearch"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:singleLine="true"
+            android:textColor="@color/black_gray"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/titlebar_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="6dip"
+        android:background="@null"
+        android:padding="6dip"
+        android:text="搜索"
+        android:textColor="@drawable/main1_titlebar_left_tc_selector"
+        android:textSize="@dimen/text_size_17"
+        android:visibility="invisible" />
+
+</RelativeLayout>
+

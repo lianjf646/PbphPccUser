@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <include
+        android:id="@+id/includetitlebar2"
+        layout="@layout/titlbar_common2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/includetitlebar2"
+        android:background="@color/style_color"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/style_color"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="3dip">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/stradioButton1"
+                style="@style/shoppingtrolley_radiobutton_style"
+                android:text="全部" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/stradioButton2"
+                style="@style/shoppingtrolley_radiobutton_style"
+                android:text="外卖" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/stradioButton3"
+                style="@style/shoppingtrolley_radiobutton_style"
+                android:text="超市" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/stradioButton4"
+                style="@style/shoppingtrolley_radiobutton_style"
+                android:text="快递" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+            <RadioButton
+                android:id="@+id/stradioButton5"
+                style="@style/shoppingtrolley_radiobutton_style"
+                android:text="任务" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1" />
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="1dip"
+            android:layout_height="12dip"
+            android:background="#ffffff" />
+
+
+        <TextView
+            android:id="@+id/btn_shaixuan"
+            style="@style/shoppingtrolley_button_style"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:text="筛选" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/LinearLayout">
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" />
+    </android.support.v4.app.FragmentTabHost>
+
+
+    <include
+        android:id="@+id/include_closetoast"
+        layout="@layout/layout_recieveorder_closetoast"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/LinearLayout" />
+
+
+    <include
+        android:id="@+id/includeshaixuan"
+        layout="@layout/layout_shaixuan"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

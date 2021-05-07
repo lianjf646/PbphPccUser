@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_adapter_my_address_tel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_adapter_my_address_customer"
+            android:layout_alignParentRight="true"
+            android:text="点击选择保修地址"
+            android:textColor="@color/text_4d4d4d"
+            android:textSize="15sp"
+            android:typeface="monospace" />
+
+        <TextView
+            android:id="@+id/tv_adapter_my_address_customer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_adapter_my_address_tel"
+            android:text="点击选择保修地址"
+            android:textColor="@color/text_4d4d4d"
+            android:textSize="15sp"
+            android:typeface="monospace" />
+
+
+        <TextView
+            android:id="@+id/tv_adapter_my_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_adapter_my_address_customer"
+            android:layout_below="@+id/tv_adapter_my_address_customer"
+            android:layout_marginTop="5dip"
+            android:text="点击选择保修地址"
+            android:textColor="#999999"
+            android:textSize="13sp"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_adapter_my_address_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/light_gray" />
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_adapter_my_address_def"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/location_false"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="默认地址"
+                android:textColor="#999999"
+                android:textSize="13sp"
+                android:typeface="monospace" />
+
+
+            <TextView
+                android:id="@+id/tv_adapter_my_address_del"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tv_adapter_my_address_edit"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="删除"
+
+                android:textColor="#999999"
+                android:textSize="13sp"
+                android:typeface="monospace" />
+
+            <TextView
+                android:id="@+id/tv_adapter_my_address_edit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:text="修改"
+                android:textColor="#999999"
+                android:textSize="13sp"
+                android:typeface="monospace" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

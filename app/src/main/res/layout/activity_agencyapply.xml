@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical"
+    tools:context="com.pbph.pcc.activity.CertificationActivity">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/include_layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_toast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawableLeft="@drawable/ico_prompt"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:text="请填写您的真实信息"
+                android:textColor="@color/black_gray" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:text="姓名"
+                    android:textColor="@color/black_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="right|center_vertical"
+
+                    android:padding="12dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:text="性别"
+                    android:textColor="@color/black_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_sex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_express_time_desc"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="right"
+                    android:paddingRight="12dp"
+                  />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:text="学校"
+                    android:textColor="@color/black_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_school"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="right|center_vertical"
+
+                    android:padding="12dp"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:text="学号"
+                    android:textColor="@color/black_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_schoolno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="right|center_vertical"
+
+                    android:padding="12dp"
+                    android:phoneNumber="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:padding="12dp"
+                    android:text="电话"
+                    android:textColor="@color/black_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="right|center_vertical"
+
+                    android:maxLength="11"
+                    android:padding="12dp"
+                    android:phoneNumber="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <EditText
+                    android:id="@+id/et_apply_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:background="#00000000"
+                    android:gravity="center_vertical"
+                    android:hint="请输入验证码"
+                    android:maxLength="6"
+                    android:padding="12dp"
+                    android:phoneNumber="true"
+                    android:textColor="@color/dark_gray"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_apply_get_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="12dp"
+                    android:background="@color/main_tab_color_bg"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="5dp"
+                    android:text="获取验证码"
+                    android:textColor="@color/white"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="12dp"
+                    android:gravity="center_vertical"
+                    android:text="证件照片"
+                    android:textColor="@color/black_gray" />
+
+                <ImageView
+                    android:id="@+id/iv_apply_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/identity_card" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_apply_add_pcc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@color/main_tab_color_bg"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="申请代理"
+        android:textColor="#3FAD64" />
+</LinearLayout>

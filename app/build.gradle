@@ -1,0 +1,110 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.0'
+    defaultConfig {
+        applicationId "com.pbph.pcc"
+        multiDexEnabled true
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 4
+        versionName "1.1.2"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    packagingOptions {
+        exclude('META-INF/DEPENDENCIES')
+        exclude('META-INF/NOTICE')
+        exclude('META-INF/LICENSE')
+//        exclude('META-INF/LICENSE.txt')
+//        exclude('META-INF/NOTICE.txt')
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+
+    }
+//    compileOptions {
+//        encoding "GBK"
+//    }
+//    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//    }
+
+
+    signingConfigs {
+        debug {
+            storeFile file("C:\\Users\\Administrator\\Desktop\\pbph")
+            keyAlias 'pbph'
+            keyPassword 'pbcom1234'
+            storePassword 'pbcom123'
+        }
+        release {
+            storeFile file("C:\\Users\\Administrator\\Desktop\\pbph")
+            keyAlias 'pbph'
+            keyPassword 'pbcom1234'
+            storePassword 'pbcom123'
+        }
+    }
+    buildTypes {
+         release {
+            signingConfig signingConfigs.release//设置签名信息
+            // 混淆
+//            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            // Zipalign优化
+            zipAlignEnabled true
+//            // 移除无用的resource文件
+            //shrinkResources true
+            // 前一部分代表系统默认的android程序的混淆文件，该文件已经包含了基本的混淆声明，后一个文件是自己的定义混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//            applicationVariants.all { variant ->
+//                variant.outputs.each { output ->
+//                    def outputFile = output.outputFile
+//                    if (outputFile != null && outputFile.name.endsWith('.apk')) {
+//                        // 输出apk名称为appname-1.0-beta1-xxxx-xx-xx.apk
+//                        def fileName = "pcc-${defaultConfig.versionName}-${releaseTime()}.apk"
+//                        output.outputFile = new File(outputFile.parent, fileName)
+//                    }
+//                }
+//            }
+
+            android.applicationVariants.all { variant ->
+                variant.outputs.all {
+                    outputFileName = "pcc-${defaultConfig.versionName}-${releaseTime()}.apk"
+                }
+            }
+        }
+    }
+
+    useLibrary 'org.apache.http.legacy'
+    productFlavors {
+    }
+}
+
+def releaseTime() {
+    return new Date().format("yyyy.MM.dd", TimeZone.getTimeZone("UTC"))
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile project(':IMKit')
+    compile project(':IMLib')
+    compile project(':imagepicker')
+    compile project(':PullToRefresh')
+    compile 'com.lzy.net:okgo:3.0.4'
+    compile 'de.greenrobot:greendao:2.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:support-v4:26.0.0-alpha1'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+}

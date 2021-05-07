@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_recieveorderitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="12dip">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:drawableLeft="@drawable/jiedan4"
+        android:drawablePadding="10dip"
+        android:text="任务"
+        android:textColor="#000000" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="10dip"
+        android:text="地点"
+        android:textColor="#555555" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="取餐"
+        android:textColor="#555555" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView2"
+        android:layout_marginTop="10dip"
+        android:text="佣金"
+        android:textColor="#555555" />
+
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="取餐"
+        android:textColor="#ff0000" />
+
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:drawablePadding="10dip"
+        android:drawableTop="@drawable/jiedanqiangdan"
+        android:gravity="center"
+        android:text="抢单 >>"
+        android:textColor="#7DDC98" />
+
+
+</RelativeLayout>
+
+
+
+

@@ -1,0 +1,286 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/include_express_define_order"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_express_address_info_sign"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/express_left_top_corner" />
+
+                <TextView
+                    android:id="@+id/tv_express_address_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_express_address_info_sign"
+                    android:layout_toRightOf="@+id/tv_express_address_info_sign"
+                    android:text="收货地址"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tv_express_address_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_express_address_desc"
+                    android:layout_toRightOf="@+id/tv_express_address_desc"
+                    android:gravity="right"
+                    android:textSize="13sp" />
+
+                <View
+                    android:id="@+id/tv_express_address_info_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@+id/tv_express_address_desc"
+                    android:layout_below="@+id/tv_express_address_desc"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/tv_express_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_express_address_desc"
+                    android:layout_below="@+id/tv_express_address_info_line"
+                    android:text="选择快递"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/sp_express_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_express_address_info_line"
+                    android:gravity="right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_express_time_info_sign"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/express_left_top_corner" />
+
+                <TextView
+                    android:id="@+id/tv_express_time_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_express_time_info_sign"
+                    android:layout_marginTop="1dp"
+                    android:layout_toRightOf="@+id/tv_express_time_info_sign"
+                    android:text="送达时间"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/sp_express_time_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_express_time_desc"
+                    android:layout_alignParentRight="true"
+                    android:gravity="right" />
+
+                <View
+                    android:id="@+id/tv_express_time_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@+id/tv_express_time_desc"
+                    android:layout_below="@+id/tv_express_time_desc"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/tv_express_is_upstairs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_express_time_desc"
+                    android:layout_below="@+id/tv_express_time_line"
+                    android:text="是否上楼"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/sp_express_is_upstairs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_express_is_upstairs"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_express_time_line"
+                    android:gravity="right" />
+
+                <View
+                    android:id="@+id/tv_express_time_line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@+id/tv_express_is_upstairs"
+                    android:layout_below="@+id/tv_express_is_upstairs"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/tv_express_urgent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_express_time_desc"
+                    android:layout_below="@+id/tv_express_time_line1"
+                    android:text="加急打赏"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/sp_express_urgent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_express_urgent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_express_time_line1"
+                    android:gravity="right" />
+
+                <View
+                    android:id="@+id/tv_express_time_line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:layout_alignLeft="@+id/tv_express_urgent"
+                    android:layout_below="@+id/tv_express_urgent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/light_gray" />
+
+                <TextView
+                    android:id="@+id/tv_express_areaurgent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_express_urgent"
+                    android:layout_below="@+id/tv_express_time_line2"
+                    android:text="跨区悬赏"
+                    android:textSize="13sp" />
+
+                <Spinner
+                    android:id="@+id/sp_express_areaurgent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/tv_express_areaurgent"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_express_time_line2"
+                    android:gravity="right" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_express_sms_info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/express_left_top_corner" />
+
+                <EditText
+                    android:id="@+id/edt_express_sms_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_express_sms_info"
+                    android:layout_toRightOf="@+id/tv_express_sms_info"
+                    android:background="@drawable/express_editext_bg"
+                    android:hint="请复制您收到的快递信息"
+                    android:maxLength="200"
+                    android:padding="8dp"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/tv_express_remarks_info"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/express_left_top_corner" />
+
+                <TextView
+                    android:id="@+id/tv_express_remarks_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_express_remarks_info"
+                    android:layout_toRightOf="@+id/tv_express_remarks_info"
+                    android:text="订单备注"
+                    android:textSize="13sp" />
+
+                <EditText
+                    android:id="@+id/edt_express_remarks_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/tv_express_remarks_desc"
+                    android:layout_below="@+id/tv_express_remarks_desc"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/express_editext_bg"
+                    android:gravity="left"
+                    android:hint="如果您选择了快递上楼服务，请在此处备注呦"
+                    android:lines="3"
+                    android:maxLength="100"
+                    android:padding="8dp"
+                    android:textColorHint="@color/dark_gray"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/include_express_define_order"
+        layout="@layout/include_define_palce_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+
+    <include
+        android:id="@+id/include_cannot"
+        layout="@layout/layout_cannot_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

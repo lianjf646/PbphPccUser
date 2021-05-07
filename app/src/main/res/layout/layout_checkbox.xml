@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/label1_style"
+    android:background="@drawable/flowlayout_item_cb_bg_selector" />
+
+
+
+
+

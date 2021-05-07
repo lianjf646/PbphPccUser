@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="16dip">
+
+    <LinearLayout
+        android:id="@+id/ll_orderdetail_prise1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_orderdetail_prise1"
+            style="@style/mygroup_listview_textview1_medium_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_address11"
+            style="@style/mygroup_listview_textview1_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="订单金额"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/view_orderdetail_prise"
+        android:layout_width="1dip"
+        android:layout_height="40dp"
+        android:background="#999999" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_orderdetail_prise2"
+            style="@style/mygroup_listview_textview1_medium_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+
+            android:textColor="#ff0000" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_address21"
+            style="@style/mygroup_listview_textview1_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="本单收入"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

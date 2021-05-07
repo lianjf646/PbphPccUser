@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <EditText
+        android:id="@+id/edt_update_phone_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:drawableLeft="@drawable/ico_login_phone"
+        android:drawablePadding="5dp"
+        android:hint="请输入手机号码"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_update_phone_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/btn_login_getcode"
+            android:layout_toLeftOf="@+id/btn_login_getcode"
+            android:layout_weight="1"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ico_login_password"
+            android:drawablePadding="5dp"
+            android:hint="请输入验证码"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_update_phone_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edt_login_username"
+            android:background="@color/main_theme_color"
+            android:padding="8dp"
+            android:text="@string/btn_login_getcode_text"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/dark_gray" />
+
+
+    <Button
+        android:id="@+id/btn_login_submit"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_marginTop="30dip"
+        android:background="@color/main_theme_color"
+        android:text="确认变更"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+</LinearLayout>

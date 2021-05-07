@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg"
+    android:orientation="vertical">
+
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swipeLayout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/lv_order_item_list"
+        style="@style/listview_style"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="#ffffff"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" />
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    <!--
+    <include
+        android:id="@+id/include_resaurant_settlement"
+        layout="@layout/include_settlement"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+        -->
+
+    <include
+        android:id="@+id/include_cannot"
+        layout="@layout/layout_cannot_buy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

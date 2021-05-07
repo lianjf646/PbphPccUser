@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/PbphPccUser.iml" filepath="$PROJECT_DIR$/.idea/PbphPccUser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GreenDaoGenerator/PbphPccUser.GreenDaoGenerator.iml" filepath="$PROJECT_DIR$/.idea/modules/GreenDaoGenerator/PbphPccUser.GreenDaoGenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IMKit/PbphPccUser.IMKit.iml" filepath="$PROJECT_DIR$/.idea/modules/IMKit/PbphPccUser.IMKit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/IMLib/PbphPccUser.IMLib.iml" filepath="$PROJECT_DIR$/.idea/modules/IMLib/PbphPccUser.IMLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/PullToRefresh/PbphPccUser.PullToRefresh.iml" filepath="$PROJECT_DIR$/.idea/modules/PullToRefresh/PbphPccUser.PullToRefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/PbphPccUser.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/PbphPccUser.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/imagepicker/PbphPccUser.imagepicker.iml" filepath="$PROJECT_DIR$/.idea/modules/imagepicker/PbphPccUser.imagepicker.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="12dip">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dip"
+        android:textColor="#555555"
+        android:textSize="@dimen/text_size_13" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView1"
+        android:layout_alignParentRight="true"
+        android:textColor="#7DDC98"
+        android:textSize="@dimen/text_size_14"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/View"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/textView11"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="6dip"
+        android:background="#888888"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="2dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/View"
+        android:layout_marginTop="6dip"
+        android:background="#7DDC98"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="2dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/textView21"
+        android:layout_marginTop="8dip"
+        android:background="@android:color/holo_orange_light"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView31"
+        android:layout_marginLeft="5dip"
+        android:layout_toRightOf="@+id/textView31"
+        android:text="任务地点:"
+        android:textColor="#333333"
+        android:textSize="@dimen/text_size_14" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/textView31"
+        android:layout_marginLeft="2dip"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/textView66"
+        android:layout_toRightOf="@+id/textView3"
+        android:text="取餐"
+        android:textColor="#7DDC98"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <TextView
+        android:id="@+id/textView66"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/textView31"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="4dip"
+        android:drawableTop="@drawable/dingdan4"
+        android:gravity="center"
+        android:text="任务"
+        android:textColor="#444444"
+        android:textSize="@dimen/text_size_14" />
+
+
+    <View
+        android:id="@+id/View1"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/textView33"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="6dip"
+        android:background="#888888"
+        android:visibility="invisible" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_toLeftOf="@+id/textView7"
+        android:text="本单收入："
+        android:textColor="#333333"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/View1"
+        android:layout_marginTop="6dip"
+        android:text="取餐"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="@dimen/text_size_14" />
+
+</RelativeLayout>
+
+
+
+

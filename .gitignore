@@ -1,0 +1,16 @@
+*.iml
+.gradle
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+
+# Project exclude paths
+/GreenDaoGenerator/build/
+/GreenDaoGenerator/build/classes/java/main/
+/IMKit/build/
+/IMLib/build/
+/PullToRefresh/build/

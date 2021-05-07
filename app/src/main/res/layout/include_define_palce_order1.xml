@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+
+        <TextView
+            android:id="@+id/tv_express_detail_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_express_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/edt_express_total_price"
+            android:text="合计: "
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/edt_express_total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_express_total_price_dw"
+            android:background="@drawable/prise_editext_bg"
+            android:gravity="right|center"
+            android:minEms="4"
+            android:padding="3dip"
+            android:textColorHint="@color/dark_gray"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_express_total_price_dw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text=" 元"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/main_theme_color"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="确认下单"
+        android:textColor="@color/white" />
+</LinearLayout>
+
+

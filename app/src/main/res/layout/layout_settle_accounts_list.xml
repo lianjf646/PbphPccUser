@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#a0000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/bg_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:minHeight="80dip" />
+
+    <LinearLayout
+        android:id="@+id/cardShopLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3"
+            android:paddingBottom="6dip"
+            android:paddingLeft="20dip"
+            android:paddingTop="6dip"
+            android:text="购物车"
+            android:textColor="#565656" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#f3f3f3"
+            android:minHeight="100dip">
+
+
+            <ListView
+                android:id="@+id/shopproductListView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:cacheColorHint="#00000000"
+                android:divider="#dcdcdc"
+                android:dividerHeight="1px"
+                android:listSelector="#00000000"
+                android:minHeight="100dip" />
+
+            <TextView
+                android:id="@+id/defaultText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/shopproductListView"
+                android:layout_alignTop="@id/shopproductListView"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:minHeight="100dip"
+                android:text="当前购物车为空快去选购吧！"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

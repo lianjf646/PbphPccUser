@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="top|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_shaixuan_item_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dp"
+        android:text="佣金价格"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dip"
+        android:background="#F4F4F4"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4dip">
+
+        <EditText
+            android:id="@+id/edt_start_prise"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="最低价"
+            android:maxLines="1"
+            android:numeric="integer"
+            android:padding="6dip"
+            android:textColor="#444444" />
+
+        <View
+            android:layout_width="7dip"
+            android:layout_height="1dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:background="#444444" />
+
+        <EditText
+            android:id="@+id/edt_end_prise"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:hint="最高价"
+            android:maxLines="1"
+            android:numeric="integer"
+            android:padding="6dip"
+            android:textColor="#444444" />
+    </LinearLayout>
+
+
+</LinearLayout>

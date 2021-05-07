@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="PbphPccUser.app" target="1.8" />
+      <module name="PbphPccUser.imagepicker" target="1.8" />
+      <module name="PbphPccUser.IMKit" target="1.8" />
+      <module name="PbphPccUser.IMLib" target="1.8" />
+      <module name="PbphPccUser.PullToRefresh" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

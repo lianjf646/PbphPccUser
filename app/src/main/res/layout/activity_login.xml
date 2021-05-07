@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:gravity="center_horizontal"
+              android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@drawable/image_login_top"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:background="@drawable/login_heard_icon"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/edt_login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ico_login_phone"
+            android:drawablePadding="5dp"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/tv_login_line"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/edt_login_username"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_gray"/>
+
+        <EditText
+            android:id="@+id/edt_login_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tv_login_getcode"
+            android:layout_toLeftOf="@+id/tv_login_getcode"
+            android:background="#00000000"
+            android:drawableLeft="@drawable/ico_login_password"
+            android:drawablePadding="5dp"
+            android:hint="请输入验证码"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/tv_login_getcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_login_line"
+            android:layout_marginTop="10dp"
+            android:background="@color/main_theme_color"
+            android:padding="8dp"
+            android:text="@string/btn_login_getcode_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_15"/>
+
+        <TextView
+            android:id="@+id/tv_login_line1"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/tv_login_getcode"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/dark_gray"/>
+
+        <Button
+            android:id="@+id/btn_login_submit"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:layout_below="@+id/tv_login_getcode"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_login_bg"
+            android:text="登录"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_17"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_login_submit"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="温馨提示:未注册小阿光的手机号码,登录时自动注册。"
+        android:textColor="@color/black_gray"
+        />
+</LinearLayout>

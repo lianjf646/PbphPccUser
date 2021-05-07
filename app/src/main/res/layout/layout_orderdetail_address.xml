@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/ll_orderdetail_address1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_orderdetail_address1"
+            style="@style/mygroup_listview_textview1_medium_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_address11"
+            style="@style/mygroup_listview_textview1_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="接单"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_orderdetail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dip"
+        android:src="@drawable/kuaidipic" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tv_orderdetail_address2"
+            style="@style/mygroup_listview_textview1_medium_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/tv_orderdetail_address21"
+            style="@style/mygroup_listview_textview1_style"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:text="到货"
+            android:textColor="#555555" />
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

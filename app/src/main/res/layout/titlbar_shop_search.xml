@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/titlebar_container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/restaurantgood_bg">
+
+    <include
+        android:id="@+id/includesearch"
+        layout="@layout/titlbar_search"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+
+    <ImageView
+        android:id="@+id/ImageViewSearch"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/includesearch"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="8dip"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/banner_zw" />
+
+
+    <TextView
+        android:id="@+id/shopName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/ImageViewSearch"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/ImageViewSearch"
+        android:maxLines="1"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ImageViewSearch"
+        android:layout_below="@+id/shopName"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/ImageViewSearch"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shopinfo1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="公告"
+            android:textColor="#CDC6C1"
+            android:textSize="13dip" />
+
+        <TextView
+            android:id="@+id/shopinfo2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left|bottom"
+            android:text="描述"
+            android:textColor="#CDC6C1"
+            android:textSize="13dip"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>
+

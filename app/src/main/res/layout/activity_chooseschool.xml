@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context="com.pbph.pcc.activity.ChooseSchoolActivity">
+
+    <include
+        layout="@layout/titlbar_common1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_margin="12dip"
+            android:background="@drawable/chooseposition_edt_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:padding="5dip"
+                android:scaleType="fitCenter"
+                android:src="@drawable/search" />
+
+            <EditText
+                android:id="@+id/mall_go_search"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@null"
+                android:hint="搜索学校"
+                android:imeOptions="actionDone"
+                android:maxLines="1"
+                android:textColor="#909090" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:layout_marginBottom="8dip"
+        android:background="#E4E5E5" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/ListViewmsggeducation"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="#00ff00"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+
+        <ListView
+            android:id="@+id/fastbar"
+            android:layout_width="30dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|right"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="#00ff00"
+            android:dividerHeight="0dip"
+            android:drawSelectorOnTop="false"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none" />
+    </FrameLayout>
+
+
+</LinearLayout>
+
+
+    <!--
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+    android:id="@+id/ListView1"
+    style="@style/listview_notice_style"
+    android:layout_weight="1" />
+
+    <LinearLayout
+    android:id="@+id/LinearLayoutloading"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/TextViewloading"
+        style="@style/loading_textview1_style" />
+    </LinearLayout>
+    -->

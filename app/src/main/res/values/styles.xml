@@ -1,0 +1,172 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/main_tab_color_bg</item>-->
+        <item name="colorPrimaryDark">@color/main_tab_color_bg</item>
+        <item name="colorAccent">@color/main_tab_color_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!--<style name="WelcomeTheme" parent="Theme.AppCompat.Light.NoActionBar">-->
+    <!--<item name="colorPrimary">@color/red</item>&ndash;&gt;-->
+    <!--<item name="colorPrimaryDark">@color/red</item>-->
+    <!--<item name="colorAccent">@color/red</item>-->
+    <!--<item name="android:windowBackground">@drawable/loading</item>-->
+    <!--</style>-->
+
+    <style name="Theme.AppStartLoadTranslucent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="titlebar_textview1_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_size_17</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="listview_restaurantorder_textview1_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+
+    <style name="listview_restaurantorder_textview2_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/shopping_car_checkbox</item>
+    </style>
+
+    <style name="label_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">left|center</item>
+        <item name="android:padding">6dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <style name="label1_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingTop">9dip</item>
+        <item name="android:paddingBottom">9dip</item>
+        <item name="android:paddingRight">18dip</item>
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minLines">1</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+    <style name="mygroup_listview_textview1_medium_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="mygroup_listview_textview1_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="mygroup_listview_textview2_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">left|center</item>
+    </style>
+
+    <style name="mygroup_listview_textview3_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minLines">1</item>
+        <item name="android:gravity">left|top</item>
+    </style>
+
+    <style name="mygroup_listview_textview5_style">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="shoppingtrolley_radiobutton_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shoppingtrolley_rb_bg_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:padding">4dip</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="shoppingtrolley_button_style">
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">#7DDC98</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="RatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">#949492</item>
+        <item name="colorControlActivated">#f7da46</item>
+    </style>
+
+    <style name="listview_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:cacheColorHint">#00000000</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:fadingEdge">none</item>
+        <item name="android:listSelector">#00000000</item>
+        <item name="android:scrollbars">none</item>
+    </style>
+
+
+    <style name="RadingStyle" parent="@android:style/Widget.RatingBar">
+        <!-- 定义星星图片 -->
+        <item name="android:progressDrawable">@drawable/orderdetail_ratingbar</item>
+        <!-- 根据自定义星星图片的大小,设置相应的值,否则可能显示不全 -->
+        <item name="android:numColumns">5</item>
+    </style>
+</resources>

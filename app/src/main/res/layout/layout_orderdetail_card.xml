@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dip">
+
+
+    <TextView
+        android:id="@+id/tv_orderdetail_card"
+        style="@style/mygroup_listview_textview2_style"
+        android:layout_marginTop="8dip"
+        android:text="订单信息"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="6dip"
+        android:layout_marginRight="6dip"
+        android:layout_marginTop="8dip"
+        android:background="#777777"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_orderdetail_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dip"
+        android:gravity="center"
+        android:orientation="vertical" />
+
+
+</LinearLayout>

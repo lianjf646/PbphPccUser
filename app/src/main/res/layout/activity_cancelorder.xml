@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/main_bg"
+              android:gravity="top|center"
+              android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_title"
+        layout="@layout/include_layout_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top|center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="18dip"
+                android:text="请选择取消原因"
+                android:textSize="@dimen/text_size_15"/>
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:drawableRight="@drawable/orange_checkbox"
+                    android:padding="10dip"
+                    android:text="不想买了"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/orange_checkbox"
+                    android:padding="10dip"
+                    android:text="买错了"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/orange_checkbox"
+                    android:padding="10dip"
+                    android:text="发现了别的更好的"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/orange_checkbox"
+                    android:padding="10dip"
+                    android:text="太久没人接单"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/dark_gray"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/orange_checkbox"
+                    android:padding="10dip"
+                    android:text="其他"
+                    android:textColor="@color/black_gray"
+                    android:textSize="@dimen/text_size_15"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@color/dark_gray"/>
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:background="@color/dark_gray"/>
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="left|top"
+                android:hint="请输入原因(选填)"
+                android:maxLines="8"
+                android:minLines="5"
+                android:padding="18dp"
+                android:textColor="@color/black_gray"
+                android:textSize="@dimen/text_size_15"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/dark_gray"/>
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dip"
+                android:background="@drawable/cancel_order_button_bg"
+                android:text="提    交"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/text_size_17"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
